@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="layout-wrapper">
+      <!-- Logo -->
+      <header class="logo-area wrapper">
+        <a href="/">
+          <img class="logo" src="images/logo.svg" alt="Base Apparel Home" />
+        </a>
+      </header>
+
+      <!-- Image section -->
+      <section class="image-area">
+        <picture>
+          <source
+            media="(min-width: 59.375rem)"
+            srcset="images/hero-desktop.jpg"
+          />
+          <img src="images/hero-mobile.jpg" alt="" />
+        </picture>
+      </section>
+
+      <!-- Main content -->
+      <main class="hero-area wrapper">
+        <h1 class="hero-title">
+          <span class="text-pink">We're</span> coming soon
+        </h1>
+        <p class="hero-description">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form id="email-form">
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              pattern="^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,4}$"
+              aria-label="Email address"
+              placeholder="Email Address"
+            />
+
+            <button class="submit-btn btn" type="submit">
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <span class="error-message">Please provide a valid email</span>
+        </form>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
